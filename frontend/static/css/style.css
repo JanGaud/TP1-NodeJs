@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    background-color: rgb(11, 11, 11);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+}
+
+/* Navigation */
+nav {
+    background-color: rgba(0, 0, 0, 0.765);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Set a higher value than the header image */
+    height: 125px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav__link:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.nav-logo {
+    width: 125px;
+    height: 100px;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.nav-logo > img {
+    width: 100%;
+    height: auto;
+}
+
+/* Header */
+.header {
+    margin: 0;
+    position: relative; /* Set relative position on the header element */
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.header > img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.7s ease;
+}
+
+.header > img:hover {
+    transform: scale(1.01);
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+a:hover {
+    color: rgb(152, 28, 28);
+    transform: scale(1.05);
+}
+
+/* populaires-li */
+
+.populaires-li >* {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.populaires-li > ul{
+    list-style: none;
+}
+
+/* app */
+
+#app {
+    height: fit-content;
+    margin: 5em;
+    line-height: 1.5;
+    font-weight: 500;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(245, 245, 245, 0.388);
+    box-shadow: 2px 3px 5px rgba(255, 255, 255, 0.185);
+}
+
+#app > a {
+    color: red;
+}
+
+p {
+    text-align: center;
+}
+
+.drink-type {
+    display: flex;
+    justify-content: center;
+}
+
+strong {
+    align-items: center;
+}
+
+/* intro */
+
+.intro > a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.intro > a:hover {
+    color: rgb(152, 28, 28);
+    transform: scale(1.05);
+}
+
+/* cocktail info */
+
+.cocktail-img{
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.cocktail-img > img {
+    width: 100%;
+    height: auto;
+}
+
